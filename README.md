@@ -24,13 +24,15 @@ In addition to cloning this repository, download the following packages:-
 
 How to use this repository:
 
-1. Navigate to the folder where MongoDB has been installed and fire up mongod.exe and mongo.exe in that order.
+1. Go to openweathermap.com and get an API key.
 
-2. Modify the config.ini file to change the city names, respective country codes and frequency (i.e: the number of times the database is generated every minute. The idea behind having this is that parameters like current weather are subject to change over time, so it is better to have the database get refreshed or updated with new, more recent values.) to those of your choice.
+2. Modify the config.ini file to change the API key to the one you just got and the city names, respective country codes and frequency (i.e: the number of times the database is generated every minute. The idea behind having this is that parameters like current weather are subject to change over time, so it is better to have the database get refreshed or updated with new, more recent values.) to those of your choice.
 
-2. Run weatherDB.py on one terminal as python weatherDB.py. This starts up 2 separate threads running parallely-- one getting and saving 5 day 3 hour forecasts and the other doing the same for current weather. You will also see alerts being posted to the terminal in case of rain, snow or freezing temperatures(<=2 degree Fahrenheit).
+3. Navigate to the folder where MongoDB has been installed and fire up mongod.exe and mongo.exe in that order.
 
-3. If you want to see the weather for the cities in your config file on a web app, in another terminal run python weatherApp.py. Then go to your web browser and post http://127.0.0.1:5000/curr to it.
+4. Run weatherDB.py on one terminal as python weatherDB.py. This starts up 2 separate threads running parallely-- one getting and saving 5 day 3 hour forecasts and the other doing the same for current weather. You will also see alerts being posted to the terminal in case of rain, snow or freezing temperatures(<=2 degree Fahrenheit).
 
-4. If you want to see the 5 day 3hour temperatures for any city of your choice as a graph, in a new terminal, run python weatherChartApp.py. Then go to your browser and  post http://localhost:8080/chart/city_of_your_choice to it.
+5. If you want to see the weather for the cities in your config file on a web app, in another terminal run python weatherApp.py. Then go to your web browser and post http://127.0.0.1:5000/curr to it.
+
+6. If you want to see the 5 day 3hour temperatures for any city of your choice as a graph, in a new terminal, run python weatherChartApp.py. Then go to your browser and  post http://localhost:8080/chart/city_of_your_choice to it.
 
