@@ -22,7 +22,7 @@ In addition to cloning this repository, download the following packages:-
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-How to use to code:
+How to use this repository:
 
 1. Navigate to the folder where MongoDB has been installed and fire up mongod.exe and mongo.exe in that order.
 
